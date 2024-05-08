@@ -13,7 +13,7 @@ Certifique-se de ter as seguintes bibliotecas instaladas:
 ## Instalação
 Para instalar as bibliotecas necessárias, você pode usar o comando:
 
-    pip install requests matplotlib pandas psycopg2 sqlalchemy
+    pip install requests matplotlib pandas
 
 No meu caso, estou fazendo o gerenciamento de versão com a biblioteca Poetry, dito isto, tudo que se for instalado usando essa arquitetura segue o padrão:
 
@@ -34,13 +34,18 @@ No meu caso, estou fazendo o gerenciamento de versão com a biblioteca Poetry, d
 ## Obter Dados da API
 A função obter_dados() faz uma solicitação à API do Banco Central para obter informações diárias sobre dinheiro em circulação.
 
-## Tendência de Uso de Moedas versus Cédulas ao Longo do Tempo
+# Insight que podemos extrair
+
+- **1 - Tendência de Uso de Moedas versus Cédulas ao Longo do Tempo:** 
+
 A função tendencia_uso_moedas_cedulas(df) analisa os dados obtidos para mostrar a tendência de uso de moedas versus cédulas ao longo do tempo, calculando o percentual de moedas e cédulas em relação ao total.
 
-## Distribuição de Cédulas e Moedas por Denominação
+- **2 - Distribuição de Cédulas e Moedas por Denominação:**
+
 A função distribuicao_por_denominacao(df) agrupa os dados por denominação e espécie (cédulas ou moedas), mostrando a distribuição quantitativa por cada tipo de dinheiro.
 
-## Flutuações de Quantidade de Cédulas e Moedas por Espécie ao Longo do Tempo
+- **3 - Flutuações de Quantidade de Cédulas e Moedas por Espécie ao Longo do Tempo:**
+
 A função flutuacoes_quantidade_por_especie(df) analisa as flutuações na quantidade de cédulas e moedas ao longo do tempo, mostrando como a quantidade varia para cada espécie de dinheiro.
 
 ## Exemplo de Uso
