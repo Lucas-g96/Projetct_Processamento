@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "projeto-processamento-dados"
+version = "0.1.0"
+description = ""
+authors = ["Lucas Gomes <lucasgomes.lg57@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pandas = "^2.2.2"
+requests = "^2.31.0"
+matplotlib = "^3.8.4"
+sqlalchemy = "^2.0.30"
+psycopg2 = "^2.9.9"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
